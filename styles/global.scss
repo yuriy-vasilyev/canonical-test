@@ -1,0 +1,36 @@
+@import '../styles/variables.scss';
+
+@import 'vanilla-framework';
+
+@include vanilla;
+
+.app-main {
+	padding: 1rem;
+	background-color: $color-light;
+	min-height: 100vh;
+}
+
+h1 {
+	line-height: 1.1;
+}
+
+h2,
+h3 {
+	line-height: 1.2;
+}
+
+.u-text-style--italic {
+	font-style: italic !important;
+}
+
+.row {
+	gap: 2rem;
+}
+
+@media screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-large - 1) {
+	.row {
+		& > .col-4 {
+			grid-column-end: span 3;
+		}
+	}
+}

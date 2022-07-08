@@ -1,0 +1,43 @@
+@import 'vanilla-framework/scss/_settings_colors.scss';
+
+.card {
+	box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+	background-color: $color-x-light;
+	border-radius: 3px;
+	overflow: hidden;
+	border-top: 3px solid #a87ca0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	&__header {
+		border-bottom: 1px solid $color-mid-x-light;
+	}
+
+	&__headerLink {
+		color: inherit;
+		font-size: 0.875rem;
+		text-transform: uppercase;
+	}
+
+	&__imageWrapper {
+		margin-bottom: 0.75rem;
+	}
+
+	&__body {
+		flex-grow: 2;
+	}
+
+	&__title {
+		line-height: 1.2;
+	}
+
+	&__footer {
+		border-top: 1px solid $color-mid-x-light;
+	}
+
+	&__footerLink {
+		color: inherit;
+		font-size: 0.875rem;
+	}
+}
